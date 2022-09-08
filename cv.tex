@@ -1,0 +1,205 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+%----------------------------------------------------------------------------------
+%            short documentation
+%----------------------------------------------------------------------------------
+%\moderncvtheme
+% usage: moderncvtheme[color]{option}
+% options: casual/classic/banking/oldstyle/fancy
+% colors: orange/red/green/grey/blue
+%\cventry
+% usage: \cventry[spacing]{years}{degree/job title}{institution/employer}{localization}{optionnal: grade/...}{optional: comment/job description}
+
+\moderncvtheme[green]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.87]{geometry}
+\usepackage{tikz}
+\setlength{\hintscolumnwidth}{4cm}
+\AtBeginDocument{\recomputelengths}
+%\nopagenumbers{}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% personal data
+\firstname{Andrew}
+\familyname{Shyika}
+\title{Senior Software Engineer}
+\address{Lviv, Ukraine}{}
+\email{andrew.shyika@gmail.com}
+%\homepage{yoursite.ua}
+%\extrainfo{website:~http://yoursite.ua}
+\social[linkedin]{sawhikes}
+\social[github]{skrix}
+\photo[64pt][0pt]{assets/profile.jpeg}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{About me}
+I'm a product-minded software engineer with 4-years of commercial experience with Ruby. I have experience working with web applications of different sizes and complexity - small prototypes, startups, and enterprise projects. I am used to solving problems not only using programming but using communication focused on business needs. Also, I have experience in mentoring and educating newbies.
+
+\section{Computer skills}
+\begin{cvcolumns}
+  \cvcolumn{Stack}{
+    \textit{Ruby}
+    \begin{itemize}
+      \item Rails
+      \item Rspec
+      \item Grape
+      \item Sidekiq
+      \item Trailblazer
+    \end{itemize}
+    \textit{JavaScript}
+    \begin{itemize}
+      \item React.js
+      \item jQuery
+    \end{itemize}
+  }
+  \cvcolumn{Databases}{
+    \textit{RDBMS}
+    \begin{itemize}
+      \item MySQL
+      \item PostgreSQL
+      \item Sqlite
+    \end{itemize}
+    \textit{NoSQL}
+    \begin{itemize}
+      \item MongoDB
+      \item Redis
+      \item Elasticsearch
+    \end{itemize}
+  }
+  \cvcolumn{Other}{
+    \begin{itemize}
+      \item REST API
+      \item GraphQL
+      \item Microservices
+      \item CI/CD
+      \item Docker
+      \item Git
+    \end{itemize}
+  }
+\end{cvcolumns}
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{Feb~2022--Aug~2022}{Senior Software Engineer}{Over-haul}{Remote}{}{
+  Supply Chain Risk Management \& Logistics Visibility solution.\newline{}
+  Achievements:
+  \begin{itemize}
+    \item Zendesk API integration;
+    \item Zendesk Webhooks integration;
+  \end{itemize}
+  Projects:
+  \begin{itemize}
+    \item Shipments management platform;
+    \item Notification management microservice;
+    \item Shipment tracking microservice;
+  \end{itemize}
+}
+\cventry{Jun~2021--Jan~2022}{Development Team Lead}{Teladoc}{Remote}{}{
+  I've got promoted to the Development Team Lead position.\newline{}
+  Achievements:
+  \begin{itemize}
+    \item Mentoring and guidance for new team members;
+    \item Helping PM manage the team as Team Lead;
+    \item Release management;
+  \end{itemize}
+  Projects:
+  \begin{itemize}
+    \item Core API application;
+    \item Account-management microservice;
+  \end{itemize}
+}
+\cventry{May~2021--Jun~2021}{Senior Software Engineer}{Teladoc}{Remote}{}{
+  World-leading telemedicine provider platform.\newline{}
+  Achievements:
+  \begin{itemize}
+    \item Enhancing preregistered accounts search to improve registration metrics;
+    \item Quoter plan as a result of collaboration with the team;
+  \end{itemize}
+  Projects:
+  \begin{itemize}
+    \item Core API application;
+    \item Mobile API proxy application;
+    \item Customer platforms;
+  \end{itemize}
+}
+\cventry{May~2021--Aug~2022}{Software Engineer}{SoftServe}{Lviv}{}{
+  Achievements:
+  \begin{itemize}
+    \item Mentored team member during retraining from QA to Software Engineer;
+  \end{itemize}
+}
+\cventry{Mar~2020--May~2021}{Software Engineer}{Matic Insurance}{Lviv, Remote}{}{
+  Digital insurance agency built to help people in the USA find the best insurance options for their homes and vehicles.\newline{}
+  Achievements:
+  \begin{itemize}
+    \item Comparison tool for agents to suggest better coverages;
+    \item Fixed and released telephony automation product;
+    \item Developed the direct sales product;
+  \end{itemize}
+  Projects:
+  \begin{itemize}
+    \item CRM system;
+    \item Telephony automation;
+    \item Direct sales platform;
+  \end{itemize}
+}
+\cventry{Sep~2019--Mar~2020}{Software Engineer}{SPsoft}{Lviv}{}{
+  Achievements:
+  \begin{itemize}
+    \item High performance bulk import from CSV to PostgreSQL;
+    \item Integration with Apple Music and Spotify;
+  \end{itemize}
+  Projects:
+  \begin{itemize}
+    \item ERP for fashion wholesalers (USA);
+    \item E-commerce platform for the salon/beauty industry (USA);
+    \item E-commerce platform for beverage distributors (USA);
+    \item Audience Relationship Management platform for creators (USA);
+    \item Networking application (UK);
+  \end{itemize}
+}
+\cventry{Jul~2018--Aug~2019}{Software Engineer}{Leobit}{Lviv}{}{
+  Achievements:
+  \begin{itemize}
+    \item In-app mailbox integrated with Gmail from scratch;
+  \end{itemize}
+  Projects:
+  \begin{itemize}
+    \item Executive consulting services platform (USA);
+    \item Booking service for the cabin rooms (Japan);
+    \item Interactive marketing-campaign landings with quests and prizes (USA);
+  \end{itemize}
+}
+
+\subsection{Miscellaneous}
+\cventry{Jul~2019--Present}{Core team member}{Lviv RUG \#pivorak}{Lviv}{}{}
+\cventry{Aug~2021--Aug~2021}{Volunteering Mentor}{\#pivorak Ruby Summer Course 2021}{Online}{}{}
+\cventry{May~2020--Jul~2020}{Volunteering Mentor}{\#pivorak Ruby Summer Course 2020}{Online}{}{}
+\cventry{Dec~2019}{Volunteering Mentor}{\#pivorak RailsGirls 2019}{Lviv}{}{}
+\cventry{Oct~2019}{Volunteering Mentor}{Hacktoberfest Lviv 2019}{Lviv}{}{}
+\cventry{May~2019--Jul~2019}{Volunteering Mentor}{\#pivorak Ruby Summer Course 2019}{Lviv}{}{}
+\cventry{Mar~2019}{Volunteering Mentor}{\#pivorak RailsGirls 2019}{Lviv}{}{}
+\cventry{Dec~2018}{Participant}{HackFood Hackathon by UCU Center for Entrepreneurship}{Ivano-Frankivsk}{}{}
+\cventry{May~2018--Jul~2018}{Graduated Student}{\#pivorak Ruby Summer Course 2018}{Lviv}{}{}
+
+\section{Languages}
+\cvlanguage{English}{upper-intermediate}{}
+\cvlanguage{Ukrainian}{native}{}
+
+\section{Education}
+\cventry{2022--Present}{Junior Specialist in Economics}{Separate structural subdivision Technological Vocational College of Lviv Polytechnic National University}{Lviv}{}{}
+\cventry{2017--2018}{Bachelor of computer science}{Lviv Polytechnic National University}{Lviv}{\textit{Not finished}}{}
+
+\renewcommand{\listitemsymbol}{- }
+
+\section{Links}
+\cvlistitem{https://github.com/skrix}
+\cvlistitem{https://www.linkedin.com/in/sawhikes}
+\cvlistitem{\href{https://medium.com/pivorak/andriy-shyika-f0617b6b2872}{\#pivorak 110 interview (ua)}}
+
+\end{document}
